@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+            width: 100%;
+            height: 2000px;
+            background: salmon;
+        }
+        .nav{
+            width: 160px;
+            height: auto;
+            position: fixed;
+            background: darkgray;
+            left: 0;
+            top: 50%;
+            margin-top:-100px;
+        }
+        .test1{
+            width: 160px;
+            height: auto;
+            border-bottom: 1px solid #ccc;
+            line-height: 40px;
+            cursor: pointer;
+        }
+        .test2{
+            display: none;
+           
+        }
+        .test2 ul{
+            width: 160px;
+            height: auto;
+            line-height: 40px;  
+        }
+        .test2 ul li{
+            width: 160px;
+            height: auto;
+            border-bottom: 1px dashed #ccc;
+            background-color: rebeccapurple;
+            line-height: 40px; 
+            position: relative;
+        }
+        .test1:hover .test2{
+            display: block;
+        }
+        .test3{
+            width: 160px;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 160px;
+            display: none;
+        }
+        .test3_Dom{
+            width: 160px;
+            height: 40px;
+            background: red;
+        }
+        .test2 ul li:hover .test3{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="nav">
+        <div class="test1">一级栏目
+            <div class="test2">
+                <ul>
+                    <li>二级栏目
+                         <div class="test3">
+                            <div class="test3_Dom">
+                                三级栏目
+                            </div>
+                            <div class="test3_Dom">
+                                三级栏目
+                            </div>
+                            <div class="test3_Dom">
+                                三级栏目
+                            </div>
+                        </div>
+                    </li>
+                    <li>二级栏目
+                            
+                    </li>
+                    <li>二级栏目
+                            <div class="test3">
+                                    <div class="test3_Dom">
+                                        三级栏目
+                                    </div>
+                                    <div class="test3_Dom">
+                                        三级栏目
+                                    </div>
+                                    <div class="test3_Dom">
+                                        三级栏目
+                                    </div>
+                                    <div class="test3_Dom">
+                                            三级栏目
+                                        </div>
+                                        <div class="test3_Dom">
+                                            三级栏目
+                                        </div>
+                                        <div class="test3_Dom">
+                                            三级栏目
+                                        </div>
+                                </div>     
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="test1">一级栏目
+            <div class="test2">
+                <ul>
+                    <li>二级栏目</li>
+                    <li>二级栏目</li>
+                    <li>二级栏目</li>
+                </ul>
+            </div>
+        </div>
+        <div class="test1">一级栏目
+            <div class="test2">
+                <ul>
+                    <li>二级栏目</li>
+                    <li>二级栏目</li>
+                    <li>二级栏目</li>
+                </ul>
+            </div>
+        </div>
+        <div class="test1">一级栏目
+            <div class="test2">
+                <ul>
+                    <li>二级栏目</li>
+                    <li>二级栏目</li>
+                    <li>二级栏目</li>
+                </ul>
+            </div>
+        </div>
+        <div class="test1">一级栏目
+            <div class="test2">
+                <ul>
+                    <li>二级栏目</li>
+                    <li>二级栏目</li>
+                    <li>二级栏目</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
