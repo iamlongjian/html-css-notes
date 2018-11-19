@@ -1,5 +1,5 @@
 # html-css-notes
 html+css基础笔记
-123456
-这是主分支能看到得
-最近imooc学习得知识做一个笔记
+html5+css3基础笔记
+主分支才看的到
+imooc模仿一个简易博客
