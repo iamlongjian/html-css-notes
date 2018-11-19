@@ -1,0 +1,8 @@
+引入normalize时要用在自创css之前；
+先注重页面的结构，再加入内容，最后加入样式。
+不同div下的元素获取到相同css：
+.nav a,
+.tag a{
+	color:#888;
+}
+两个相差不大的页面尽量用同一个css文件：如index和article页面都是用style2.css
