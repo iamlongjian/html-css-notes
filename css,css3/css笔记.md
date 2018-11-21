@@ -16,8 +16,28 @@ ID选择器：#ID名称{`css样式代码`}
 }`
 以上例子：first类下的span字体为红色。
 
-- 伪类选择器：
-`a:hover,a:mousedown……`
+#### 伪类选择器
+1. :hover 鼠标经过
+2. :link 鼠标没点击过
+3. :visited 鼠标点击过
+4.  :active鼠标点击的一瞬间
+5.  :focus鼠标聚焦时
+#### 伪元素选择器
+- `::after{}` 元素之前 `::before{}`元素之后
+- `div p::frist-child{}`div下的第一个p元素，`div p::last-child{}`div下的最后一个p元素，`div p::nth-child{3}`div下的第3个p元素
+- 想要一段话的第一个字母字号变大：
+```
+HTML
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+```
+```
+CSS伪类选择器::first-letter
+        <style>
+        p::first-letter{
+           font-size: 50px;
+        }
+	    </style>
+```
 
 - 分组选择符：当你想为两个类设置同一种样式
 `h1,p{css}
@@ -45,7 +65,7 @@ ID选择器：#ID名称{`css样式代码`}
 字(字母)间距：`p{letter-sapcing:2em} `字间距为2em;
 对齐方式: `text-align:center`(居中对齐)  `text- align:right`(右对齐)  `text- align:left`(左对齐)
 px最常用，1em=14px;
-- 元素分类
+- 元素分类display
 **块状元素：`div,section,p,h1-h6,ol,ul,dl,table,address,blockquote,form`** 
 独占一行，可设置宽高和边距，宽度不设置则占父容器的100%。
 **内联元素（行内元素）:`a,span,br,i,em,strong,label,q,var,code……`**
@@ -54,10 +74,11 @@ px最常用，1em=14px;
 和其他元素共存一行，可设置宽高和边距。
 **内联转换为块级的方式:`display:block;`**
 **块级转换为内联的方式:`display:inline;`**
-**内联或者块级转换为内联块级元素:`display:inline-block;`**
+**内联块级元素:`display:inline-block;`**
 
 
 - 盒子模型
+![FCCOx0.png](https://s1.ax1x.com/2018/11/21/FCCOx0.png)
 `Margin`外边距，`padding`内边距，`border`边框，
 计算一个元素的实际占位： `margin+border+padding+width;`
 块级元素都具备盒子模型的特性。
