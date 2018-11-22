@@ -1,0 +1,364 @@
+*{
+	box-sizing: border-box;
+	transition: 200ms;
+}
+img{max-width: 100%;}
+.container{max-width: 1200px;margin: 0 auto;
+    display: block;}
+a{text-decoration: none;}
+li{list-style: none;}
+body{
+	font-family: "微软雅黑";
+}
+ul{margin:0;padding: 0;}
+.clearf::after,
+.clearf::before{
+	content: "";
+	display: block;
+	clear: both;
+}
+.fl{float: left;display:inline-block;}
+.fr{float: right;display:inline-block;}
+hr{
+	height: 3px;
+	display: block;
+	background: rgb(180, 180, 180);
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9{
+	min-height: 1;
+	position: relative;
+}
+.col-1{
+	width: 10%;
+	float: left;
+	display: block;
+}
+.col-2{
+	width: 20%;
+	float: left;
+	display: block;
+}
+.col-3{
+	width: 30%;
+	float: left;
+	display: block;
+}	
+.col-4{
+	width: 40%;
+	float: left;
+	display: block;
+}
+.col-5{
+	width: 50%;
+	float: left;
+	display: block;
+}
+.col-6{
+	width: 60%;
+	float: left;
+	display: block;
+}
+.col-7{
+	width: 70%;
+	float: left;
+	display: block;
+}
+.col-8{
+	width: 80%;
+	float: left;
+	display: block;
+}
+.col-9{
+	width: 90%;
+	float: left;
+	display: block;
+}
+
+
+header{
+	padding: 10px 0; 
+	background: url(../img/top_bg.png) top left;
+	background-repeat: no-repeat;
+}
+header .right input{
+	border-radius: 3px;
+	border: 1px solid #777;
+	padding: 3px 7px;
+	box-shadow: 1px 2px 1px 2px rgba(0,0,0,.1); 
+}
+header .right button{
+	padding: 5px 8px;
+	border-radius: 5px;
+	background: #fc8d01;
+	border: none;
+	color: #fff;
+}
+header a{
+	font-size: 13px;
+	color: #000;
+}
+header a:hover{
+	border-bottom: 1px solid #000;
+}
+header a::after{
+	content: "|";
+}
+nav{
+	background: #1a9de1;
+	border-bottom: 2px solid #fc8d01; 
+	box-shadow: 0 1px 2px #1a9de1;
+}
+nav ul li{
+	padding: 13px 16px;
+	display:block;
+	color: #fff;
+}
+nav ul li:hover{
+	background:#fc8d01; 
+}
+.banner{padding: 10px 0;}
+.banner img{height: 300px;}
+
+
+
+.news .left .title{
+	padding: 29px 0px ;
+}
+.news .left .title .active{
+	padding: 5px 12px 6px 12px;
+	display:inline-block;
+	background: #24a5eb;
+	color: #fff;
+}
+.news .left .title .active a{
+	color: #fff;
+}
+.news .left .title .item{
+	padding: 5px 12px 6px 12px;
+	background: #fff;
+	color: #000;
+}
+.news .left .title .item a{
+	color: #000;
+	font-weight: 100;
+}
+.news .left .title span{
+	color: #fd5900;
+	font-size: 13px;
+}
+.news .left .title span:hover{
+	border-bottom: 1px solid #fd5900;
+	cursor: pointer;
+}
+.news .left .title span::after{
+	content:'>>';
+}
+.news .left .content{
+	padding: 10px;
+	border: 1px solid #e5e5e5;
+	box-shadow: 0 2px 3px #e5e5e5;
+}
+.news .left .content img{
+	width: 324px;
+	height: 210px;
+	margin-right: 20px;
+}
+.news .left .content ul li{
+	font-size: 13px;
+	font-weight: 100;
+	margin-bottom: 22px;
+}
+.news .left .content ul li:hover{
+	cursor: pointer;
+}
+.news .left .content ul li span{
+	float: right;
+	display: block;
+}
+
+
+.news .right .title{
+	padding:29px 0px 29px 20px;
+}
+.news .right .title .active{
+	padding: 5px 12px 6px 12px;
+	display:inline-block;
+	background: #24a5eb;
+	color: #fff;
+}
+.news .right .title .active a{
+	color: #fff;
+}
+.news .right .title span{
+	color: #fd5900;
+	font-size: 13px;
+}
+.news .right .title span:hover{
+	border-bottom: 1px solid #fd5900;
+	cursor: pointer;
+}
+.news .right .title span::after{
+	content:'>>';
+}
+.news .right .content{
+	margin-left: 20px;
+	padding: 15px 20px;
+	border: 1px solid #e5e5e5;
+	box-shadow: 0 2px 3px #e5e5e5;
+}
+.news .right .content ul li{
+	font-size: 13px;
+	font-weight: 100;
+	margin-bottom: 20.3px;
+}
+.news .right .content ul li:hover{
+	cursor: pointer;
+}
+.news .right .content ul li span{
+	float: right;
+	display: block;
+}
+
+
+.skill .left  .title{
+	padding:29px 0px;
+}
+.skill .left  .title .active{
+	padding: 5px 12px 6px 12px;
+	display:inline-block;
+	background: #24a5eb;
+	color: #fff;
+}
+.skill .left  .title .active a{
+	color: #fff;
+}
+.skill .left  .title span{
+	color: #fd5900;
+	font-size: 13px;
+}
+.skill .left  .title span:hover{
+	border-bottom: 1px solid #fd5900;
+	cursor: pointer;
+}
+.skill .left .title span::after{
+	content:'>>';
+}
+.skill .left .content{
+	padding: 15px 20px;
+	border: 1px solid #e5e5e5;
+	box-shadow: 0 2px 3px #e5e5e5;
+	height: 205px;
+}
+.skill .left .content .item{
+	margin-right: 65px;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 100;
+	color: #777;
+}
+.skill .left .content .item img{
+	width: 200px;
+	height: 120px;
+}
+
+.skill .right .title{
+	padding:29px 0px 29px 20px;
+}
+.skill .right .title .active{
+	padding: 5px 12px 6px 12px;
+	display:inline-block;
+	background: #24a5eb;
+	color: #fff;
+}
+.skill .right .title .active a{
+	color: #fff;
+}
+.skill .right .title span{
+	color: #fd5900;
+	font-size: 13px;
+}
+.skill .right .title span:hover{
+	border-bottom: 1px solid #fd5900;
+	cursor: pointer;
+}
+.skill .right .title span::after{
+	content:'>>';
+}
+.skill .right .content{
+	margin-left: 20px;
+	padding: 15px 20px;
+	border: 1px solid #e5e5e5;
+	box-shadow: 0 2px 3px #e5e5e5;
+}
+.skill .right .content img{
+	margin: 10px 10px 5px 0;
+}
+
+.cpa .right .title{
+	padding:29px 20px 29px 0 ;
+}
+.cpa .right .title .active{
+	padding: 5px 12px 6px 12px;
+	display:inline-block;
+	background: #24a5eb;
+	color: #fff;
+}
+.cpa .right .title .active a{
+	color: #fff;
+}
+.cpa .right .title span{
+	color: #fd5900;
+	font-size: 13px;
+}
+.cpa .right .title span:hover{
+	border-bottom: 1px solid #fd5900;
+	cursor: pointer;
+}
+.cpa .right .title span::after{
+	content:'>>';
+}
+.cpa .right .content{
+	margin-right: 20px;
+	padding: 15px 20px;
+	border: 1px solid #e5e5e5;
+	box-shadow: 0 2px 3px #e5e5e5;
+}
+.cpa .right .content3 {
+    padding: 15px 20px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 3px #e5e5e5;
+}
+.cpa .right .content3 img{
+	margin: 10px 10px 5px 0;
+}
+.cpa .right .content img{
+	margin: 10px 10px 5px 0;
+}
+.quick{
+	font-size: 15px;
+	border: 2px solid #eeeeee;
+	padding: 10px 20px;
+}
+.quick ul li{
+	font-weight: 100;
+	padding: 0 10px;
+	font-size: 13px;
+}
+
+footer{
+	margin: 50px 0 30px 0;
+	text-align: center;
+}
+footer .tips{
+	font-size: 13px;
+	color: #777;
+	margin-bottom: 10px;
+}
