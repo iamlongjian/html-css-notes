@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .item{
+            background: indianred;
+            width: 98px;
+            height: 98px;
+            border: 1px solid silver; 
+        }
+        .item1{
+            background: rgb(255, 151, 151);
+            width: 98px;
+            height: 98px;
+            border: 1px solid silver; 
+        }
+        .item2{
+            background: rgb(160, 253, 142);
+            width: 98px;
+            height: 137px;
+            border: 1px solid silver; 
+        }
+        .item3{
+            background: rgb(250, 214, 97);
+            width: 98px;
+            height: 108px;
+            border: 1px solid silver; 
+        }
+        .item4{
+            background: rgb(124, 42, 255);
+            width: 98px;
+            height: 120px;
+            border: 1px solid silver; 
+        }
+        .content{
+            display:-webkit-flex;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .item{
+            order: 5;
+        }
+        .item1{
+            align-self: flex-end;
+        }
+        .item2,
+        .item3,
+        .item4{
+            display:-webkit-flex;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="item">
+                000
+        </div>
+        <div class="item1">
+            1
+        </div>
+        <div class="item2">
+            2
+        </div>
+        <div class="item3">
+            3
+        </div>
+        <div class="item4">
+            4
+        </div>
+        
+    </div>
+    
+</body>
+</html>
