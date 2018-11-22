@@ -53,14 +53,14 @@ align-content:stretch（默认值）;     轴线占满整个交叉轴。
 ```
 #### 项目(子元素)属性
 1. order属性
-`order:整数`        当数字越小时(默认为0)，优先级就越高，越排在前面。
+- `order:整数`        当数字越小时(默认为0)，优先级就越高，越排在前面。
 2. flex-grow属性
-`flex-grow:数字`    属性定义项目的放大比例，默认为`0`，即如果存在剩余空间，也不放大。 
+- `flex-grow:数字`    属性定义项目的放大比例，默认为`0`，即如果存在剩余空间，也不放大。 
 3. flex-shrink属性
-`flex-shrink:数字`  属性定义了项目的缩小比例，默认为`1`，即如果空间不足，该项目将缩小。
+- `flex-shrink:数字`  属性定义了项目的缩小比例，默认为`1`，即如果空间不足，该项目将缩小。
 4. flex-basis属性
-`flex-basis:<length> | auto;`    属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。
+- `flex-basis:<length> | auto;`    属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。
 5. flex属性
-`flex:`              属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。
+- `flex:`              属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。
 6. align-self属性
-`align-self:auto | flex-start | flex-end | center | baseline | stretch;`       属性允许单个项目有与其他项目不一样的对齐方式，可覆盖`align-items`属性。默认值为`auto`，表示继承父元素的`align-items`属性，如果没有父元素，则等同于`stretch`。
+- `align-self:auto | flex-start | flex-end | center | baseline | stretch;`       属性允许单个项目有与其他项目不一样的对齐方式，可覆盖`align-items`属性。默认值为`auto`，表示继承父元素的`align-items`属性，如果没有父元素，则等同于`stretch`。
